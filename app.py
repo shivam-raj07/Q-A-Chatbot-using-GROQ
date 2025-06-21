@@ -31,7 +31,7 @@ def generate_response(question,api_key,llm,temperature,max_token):
 st.title("Q&A Chatbot")
 
 st.sidebar.title("Settings")
-api_key=st.sidebar.text_input("Enter your OpenAI api key:",type="password")
+api_key=st.sidebar.text_input("Enter your GROQ api key:",type="password")
 
 temperature=st.sidebar.slider("Temperature",min_value=0.0,max_value=1.0,value=0.7)
 max_tokens=st.sidebar.slider("Max Tokens",min_value=50,max_value=300,value=150)
